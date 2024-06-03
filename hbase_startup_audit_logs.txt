@@ -1,0 +1,43 @@
+2024-06-03 21:55:39,537 [myid:] - INFO  [main:o.a.z.s.DataTree@1702] - The digest in the snapshot has digest version of 2, with zxid as 0x7c, and digest value as 25721696236
+2024-06-03 21:55:39,553 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@372] - 142 txns loaded in 9 ms
+2024-06-03 21:55:39,553 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@291] - Snapshot loaded in 22 ms, highest zxid is 0x10a, digest is 65565626836
+2024-06-03 21:55:39,553 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@480] - Snapshotting: 0x10a to /Users/syed/Desktop/gsoc/zk-custom-3.8.5/data/version-2/snapshot.10a
+2024-06-03 21:55:39,555 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@589] - Snapshot taken in 2 ms
+2024-06-03 21:55:39,560 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::o.a.z.s.PrepRequestProcessor@135] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2024-06-03 21:55:39,561 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2024-06-03 21:55:39,570 [myid:] - INFO  [main:o.a.z.s.ContainerManager@83] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
+2024-06-03 21:55:39,571 [myid:] - INFO  [main:o.a.z.a.ZKAuditProvider@40] - ZooKeeper audit is enabled.
+2024-06-03 21:55:39,571 [myid:] - INFO  [main:o.a.z.a.Slf4jAuditLogger@35] - user=syed	operation=serverStart	result=success
+2024-06-03 21:56:07,066 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@284] - Creating new log file: log.10b
+2024-06-03 21:56:07,092 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase	znode_type=persistent	result=failure
+2024-06-03 21:56:08,554 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/backup-masters/localhost,16000,1717431965142	znode_type=ephemeral	result=success
+2024-06-03 21:56:08,595 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/master	znode_type=ephemeral	result=success
+2024-06-03 21:56:08,609 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=delete	znode=/hbase/backup-masters/localhost,16000,1717431965142	result=success
+2024-06-03 21:56:08,666 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50001	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/flush-table-proc/acquired	znode_type=persistent	result=failure
+2024-06-03 21:56:08,697 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50001	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/online-snapshot/acquired	znode_type=persistent	result=failure
+2024-06-03 21:56:09,054 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/hbaseid	result=success
+2024-06-03 21:56:10,678 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/meta-region-server	result=success
+2024-06-03 21:56:10,695 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=delete	znode=/hbase/draining/localhost,16020,1717431893910	result=failure
+2024-06-03 21:56:10,737 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/flush-table-proc/acquired	znode_type=persistent	result=failure
+2024-06-03 21:56:10,747 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/online-snapshot/acquired	znode_type=persistent	result=failure
+2024-06-03 21:56:12,190 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50001	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/rs/localhost,16020,1717431966691	znode_type=ephemeral	result=success
+2024-06-03 21:56:15,786 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/meta-region-server	result=success
+2024-06-03 21:56:16,317 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/meta-region-server	result=success
+2024-06-03 21:56:16,502 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/hbase:meta	result=success
+2024-06-03 21:56:16,507 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/hbase:namespace	result=success
+2024-06-03 21:56:16,539 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=delete	znode=/hbase/replication/rs/localhost,16020,1717431893910	result=failure
+2024-06-03 21:56:16,922 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=delete	znode=/hbase/replication/rs/localhost,16020,1717430171533	result=failure
+2024-06-03 21:56:17,563 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/namespace/default	znode_type=persistent	result=failure
+2024-06-03 21:56:17,569 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/namespace/default	result=success
+2024-06-03 21:56:17,574 [myid:] - ERROR [SyncThread:0:o.a.z.a.Slf4jAuditLogger@33] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/namespace/hbase	znode_type=persistent	result=failure
+2024-06-03 21:56:17,579 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/namespace/hbase	result=success
+2024-06-03 21:56:20,369 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x1000342be730018, timeout of 40000ms exceeded
+2024-06-03 21:58:41,583 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/table/my_table	znode_type=persistent	result=success
+2024-06-03 21:58:41,588 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/my_table	result=success
+2024-06-03 21:58:41,984 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/my_table	result=success
+2024-06-03 21:58:42,925 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/my_table	result=success
+2024-06-03 21:58:43,711 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/my_table	result=success
+2024-06-03 21:58:44,210 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=delete	znode=/hbase/table/my_table	result=success
+2024-06-03 22:01:41,377 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=create	znode=/hbase/table/my_table_2	znode_type=persistent	result=success
+2024-06-03 22:01:41,382 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/my_table_2	result=success
+2024-06-03 22:01:41,788 [myid:] - INFO  [SyncThread:0:o.a.z.a.Slf4jAuditLogger@35] - session=0x10003c409b50000	user=127.0.0.1	ip=127.0.0.1	operation=setData	znode=/hbase/table/my_table_2	result=success
