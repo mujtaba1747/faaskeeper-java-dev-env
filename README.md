@@ -1,2 +1,2 @@
 # faaskeeper-java-dev-env
-A dev env with every required dependency for developing FaaSKeeper Java client..
+Configs and scripts used for FaaSKeeper Java client project
