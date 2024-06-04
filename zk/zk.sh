@@ -9,7 +9,12 @@ cd dev
 ./run.sh # Opens into docker
 mvn clean install
 # Now copy the bin.tar.gz file from zookeeper-assembly/target
+# To decompress the tarfile
 tar -xvf bin-tar-gz-file-path
+# All the required JARs will be in the lib dir
+# To install the jar files in zk lib dir to local maven (Useful for obtaining locally built zk client lib)
+# Run the jar installer python script
+# The script also attempts to add those JARs in the pom.xml file of any project. Just give it the path to pom file
 
 # Use the zoo.cfg that I used
 
@@ -19,10 +24,6 @@ cd bin
 ./zkServer.sh start-foreground
 ./zkServer.sh stop
 ./zkServer.sh status
-
-# To install the jar files in zk lib dir to local maven (Useful for obtaining locally built zk client lib)
-# Run the jar installer python script
-# The script also attempts to add those JARs in the pom.xml file of any project. Just give it the path to pom file
 
 # To create a simple Java project to use the ZK client lib
 mvn archetype:generate -DgroupId=com.localzkclient -DartifactId=zkclient-0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

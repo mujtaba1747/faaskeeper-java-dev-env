@@ -1,0 +1,3 @@
+mvn archetype:generate -DgroupId=com.localzkclient -DartifactId=zkclient-0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn clean compile
+mvn exec:java -Dexec.mainClass="com.localzkclient.App"
