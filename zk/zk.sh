@@ -7,7 +7,7 @@ sudo lsof -PiTCP -sTCP:LISTEN
 cd dev
 # Start docker on your machine
 ./run.sh # Opens into docker
-mvn clean install
+mvn clean install -DskipTests
 # Now copy the bin.tar.gz file from zookeeper-assembly/target
 # To decompress the tarfile
 tar -xvf bin-tar-gz-file-path
